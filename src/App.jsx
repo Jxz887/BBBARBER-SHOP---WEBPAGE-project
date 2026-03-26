@@ -266,7 +266,7 @@ const slots = [
                   <input type="radio" name="payment" defaultChecked />
                   <div>
                     <strong>QR Code พร้อมเพย์</strong>
-                    <p>สแกนเพื่อชำระเงินได้ทันที</p>
+                    <p>สแกนเพื่อชำระเงินได้ทันที.</p>
                   </div>
                 </label>
 
