@@ -25,7 +25,7 @@ export default function HomePage({ setPage }) {
           </div>
 
           <div className="hidden items-center justify-center md:flex">
-            <div className="text-center text-[#d9b06a]">
+            <div className="text-center text-[#d9b06a]"> // Logo แบบมีตัวหนังสือประกอบ //
               <div className="text-7xl font-serif italic">Duke</div>
               <div className="-mt-2 text-6xl font-serif italic">barber</div>
               <div className="mt-2 text-sm tracking-[0.25em]">SINCE 1920</div>
