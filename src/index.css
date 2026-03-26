@@ -217,3 +217,84 @@ button {
   color: #ffd08c;
   font-size: 0.9rem;
 }
+
+.grid {
+  display: grid;
+  gap: 22px;
+}
+
+.grid-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.service-card {
+  background: linear-gradient(180deg, #efc084, #e8b472);
+  color: var(--card-text);
+  border-radius: 24px;
+  padding: 22px;
+  box-shadow: var(--shadow);
+}
+
+.service-card.large {
+  min-height: 220px;
+}
+
+.service-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 14px;
+  align-items: flex-start;
+}
+
+.service-top h3 {
+  margin: 0 0 8px;
+}
+
+.service-top p {
+  margin: 0;
+  color: rgba(42, 27, 16, 0.72);
+}
+
+.price {
+  font-size: 1.4rem;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.service-time {
+  margin: 14px 0 20px;
+  color: rgba(42, 27, 16, 0.75);
+  font-weight: 600;
+}
+
+.btn {
+  min-height: 48px;
+  padding: 0 18px;
+  border-radius: 14px;
+  font-weight: 700;
+  transition: 0.2s ease;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+}
+
+.btn-primary {
+  background: linear-gradient(180deg, #ffae3d, var(--accent));
+  color: #25170e;
+  box-shadow: 0 12px 24px rgba(245, 154, 35, 0.25);
+}
+
+.btn-secondary {
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--text);
+  border: 1px solid var(--line);
+}
+
+.full {
+  width: 100%;
+}
