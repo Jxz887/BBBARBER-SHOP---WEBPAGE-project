@@ -9,26 +9,26 @@ export default function SchedulePage({ setPage }) {
   const [selectedDate, setSelectedDate] = useState("");
 
   return (
-    <PageShell title="Barber" page="schedule" setPage={setPage}>
+    <PageShell title="Barber" page="schedule" setPage={setPage}>/// ใช้ PageShell เดียวกับหน้าอื่นๆ เพราะโครงสร้างคล้ายกัน //
       <div className="mx-auto max-w-[980px]">
         <div className="mb-8">
           <div className="text-3xl">ตารางจองช่าง</div>
-          <div className="text-sm text-white/70">ตรวจสอบตารางเวลาการทำงานและวันจองคิวสำหรับคิวของช่าง</div>
+          <div className="text-sm text-white/70">ตรวจสอบตารางเวลาการทำงานและวันจองคิวสำหรับคิวของช่าง</div>// คำอธิบายสั้นๆ เกี่ยวกับตารางจองช่าง //
         </div>
 
         <div className="grid gap-4 md:grid-cols-2">
           <Card className="flex items-center gap-4">
             <Calendar size={34} />
             <div>
-              <div className="text-3xl font-semibold">5</div>
-              <div className="text-sm text-black/65">จำนวนคิว</div>
+              <div className="text-3xl font-semibold">5</div>// แสดงจำนวนคิวที่จองในวันที่เลือก //
+              <div className="text-sm text-black/65">จำนวนคิว</div>// แสดงจำนวนคิวที่จองในวันที่เลือก //
             </div>
           </Card>
 
           <Card className="flex items-center gap-4">
             <CircleUserRound size={34} />
             <div>
-              <div className="text-3xl font-semibold">3</div>
+              <div className="text-3xl font-semibold">3</div>// แสดงจำนวนช่างที่มีในวันที่เลือก //
               <div className="text-sm text-black/65">ช่าง</div>
             </div>
           </Card>
