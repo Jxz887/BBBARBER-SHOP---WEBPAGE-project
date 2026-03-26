@@ -6,13 +6,13 @@ import PrimaryButton from "../components/PrimaryButton";
 import { services, timeSlots } from "../data/services";
 
 export default function ReservationPage({ setPage }) {
-  const [service, setService] = useState("แพ็กเกจพิเศษ VIP");
+  const [service, setService] = useState("แพ็กเกจพิเศษ VIP");// กำหนดค่าเริ่มต้นเป็นบริการแพ็กเกจพิเศษ VIP //
   const [barber, setBarber] = useState("ช่างตัด");
-  const [date, setDate] = useState("");
+  const [date, setDate] = useState("");// กำหนดค่าเริ่มต้นเป็นค่าว่างสำหรับวันที่ //
   const [slot, setSlot] = useState("เลือกเวลา");
 
   const selected = useMemo(
-    () => services.find((s) => s.title === service) ?? services[7],
+    () => services.find((s) => s.title === service) ?? services[7],// กำหนดค่าเริ่มต้นเป็นบริการแพ็กเกจพิเศษ VIP หากไม่พบบริการที่ตรงกับชื่อ //
     [service]
   );
 
@@ -21,7 +21,7 @@ export default function ReservationPage({ setPage }) {
       <div className="mx-auto max-w-[760px] rounded-md bg-[#efbe80] p-8">
         <div className="mb-8 text-center text-black">
           <div className="text-3xl font-medium">จองคิว</div>
-          <div className="text-sm text-black/65">กรอกรายละเอียดเพื่อจองคิวใช้บริการของเรา</div>
+          <div className="text-sm text-black/65">กรอกรายละเอียดเพื่อจองคิวใช้บริการของเรา</div>// คำอธิบายสั้นๆ เกี่ยวกับขั้นตอนการจองคิว //
         </div>
 
         <div className="space-y-5 text-black">

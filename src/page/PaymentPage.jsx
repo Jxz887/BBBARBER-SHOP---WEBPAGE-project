@@ -15,16 +15,16 @@ export default function PaymentPage({ setPage }) {
   ];
 
   return (
-    <PageShell title="payment" page="reservation" setPage={setPage}>
+    <PageShell title="payment" page="reservation" setPage={setPage}>// ใช้ PageShell เดียวกับ ReservationPage เพราะโครงสร้างคล้ายกัน //
       <div className="mx-auto max-w-[980px] text-white">
         <div className="mb-8 text-center">
           <div className="text-3xl">ชำระเงิน</div>
-          <div className="text-sm text-white/70">ยืนยันการจองและชำระเงินเพื่อเสร็จสิ้นขั้นตอนจองคิว</div>
+          <div className="text-sm text-white/70">ยืนยันการจองและชำระเงินเพื่อเสร็จสิ้นขั้นตอนจองคิว</div>// คำอธิบายสั้นๆ เกี่ยวกับขั้นตอนการชำระเงิน //
         </div>
 
         <div className="grid gap-6 lg:grid-cols-[1.5fr_0.8fr]">
           <Card>
-            <div className="grid gap-6 md:grid-cols-[1.25fr_1fr]">
+            <div className="grid gap-6 md:grid-cols-[1.25fr_1fr]">// แบ่งเป็นสองคอลัมน์สำหรับรายละเอียดการจองและสรุปยอด //
               <div>
                 <div className="mb-3 text-lg font-semibold">รายละเอียดการจอง</div>
                 <div className="mb-1 text-sm text-black/70">ตัดผมครบวงจร</div>
@@ -80,9 +80,8 @@ export default function PaymentPage({ setPage }) {
                   <button
                     key={m.key}
                     onClick={() => setMethod(m.key)}
-                    className={`flex w-full items-center gap-3 rounded-md border p-4 text-left transition ${
-                      active ? "border-black/40 bg-[#d1a063]" : "border-black/20 bg-[#c89a61]"
-                    }`}
+                    className={`flex w-full items-center gap-3 rounded-md border p-4 text-left transition ${active ? "border-black/40 bg-[#d1a063]" : "border-black/20 bg-[#c89a61]"
+                      }`}
                   >
                     <div className={`h-4 w-4 rounded-full border border-black/40 ${active ? "bg-white" : "bg-transparent"}`} />
                     <Icon size={18} />
