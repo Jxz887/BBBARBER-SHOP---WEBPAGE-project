@@ -46,7 +46,7 @@ Operating Environment
 - Database: MySQL / PostgreSQL  
 
 Design and Implementation Constraints
-- ระบบต้องรองรับผู้ใช้งานพร้อมกัน 20 คน  
+- ระบบต้องรองรับผู้ใช้งานพร้อมกัน 100 คน  
 - ข้อมูลการชำระเงินต้องเข้ารหัสและปลอดภัย  
 - ใช้งานได้ทั้งมือถือและเดสก์ท็อป  
 
@@ -159,17 +159,3 @@ API Testing
 ใช้ Postman ทดสอบ API
 ตรวจสอบ Response และ Status Code
 ทดสอบ CRUD ครบทุกฟังก์ชัน
-
-2.6 การ Deploy
-ระบบถูกนำไป Deploy เพื่อใช้งานจริง โดยมีรายละเอียดดังนี้
-
-Platform ที่ใช้
-Vercel 
-ขั้นตอนการ Deploy
-Push code ขึ้น GitHub
-เชื่อมต่อกับ Vercel
-ตั้งค่า Environment Variables
-Deploy และทดสอบระบบ
-ผลลัพธ์
-ระบบสามารถเข้าถึงผ่าน URL ได้
-ผู้ใช้สามารถใช้งานระบบได้จริง
