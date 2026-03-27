@@ -112,7 +112,7 @@ export default function App() {
               <div className="section-head">
                 <div className="pill">Popular Services</div>
                 <h2>บริการยอดนิยม</h2>
-                <p>จัด card ใหม่ให้อ่านง่าย ราคาเด่น และดูเป็นระเบียบมากขึ้น</p>
+                <p>เลือกบริการยอดนิยมที่ท่านต้องการ</p>
               </div>
 
               <div className="grid grid-4">
