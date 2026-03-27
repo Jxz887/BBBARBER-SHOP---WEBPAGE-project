@@ -100,8 +100,8 @@ export default function App() {
                   <p>เวลาเปิดร้าน</p>
                 </div>
                 <div className="stat-card">
-                  <h3>UX ใหม่</h3>
-                  <p>โทนสีและ layout ดีขึ้น</p>
+                  <h3>เลือกระบบจ่ายเงินได้ด้วยตัวเอง</h3>
+                  <p>QR code / Mobile  banking / บัตรเครดิต</p>
                 </div>
               </div>
             </div>
