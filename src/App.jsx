@@ -14,7 +14,31 @@ const slots = [
   "16:00", "16:30", "17:00", "17:30",
 ];
 
- return (
+export default function App() {
+  const [page, setPage] = useState("home");
+  const [selectedService, setSelectedService] = useState(services[0].name);
+  const [selectedBarber, setSelectedBarber] = useState("ช่าง J");
+  const [selectedDate, setSelectedDate] = useState("");
+  const [selectedTime, setSelectedTime] = useState("");
+  const [name, setName] = useState("");
+  const [phone, setPhone] = useState("");
+  const [email, setEmail] = useState("");
+
+  const currentService = useMemo(
+    () => services.find((s) => s.name === selectedService) || services[0],
+    [selectedService]
+  );
+
+  const navItems = [
+    ["home", "Home"],
+    ["service", "Service"],
+    ["reservation", "Reservation"],
+    ["payment", "Payment"],
+    ["schedule", "Schedule"],
+    ["login", "Login"],
+  ];
+
+  return (
     <div className="app">
       <header className="navbar">
         <div className="container nav-inner">
@@ -48,9 +72,9 @@ const slots = [
             <div className="container hero-content">
               <div className="hero-left">
                 <div className="pill">Premium Barber Experience</div>
-                <h1>ร้านตัดผมชายที่ดูดีขึ้น ใช้งานง่ายขึ้น</h1>
+                <h1>Duke Barber</h1>
                 <p>
-                  ปรับ UI ให้ดูสะอาด พรีเมียม อ่านง่ายขึ้น และพร้อมต่อยอดเป็นเว็บจองคิวจริง
+                  Duke Barber
                 </p>
                 <div className="hero-actions">
                   <button className="btn btn-primary" onClick={() => setPage("reservation")}>
@@ -266,7 +290,7 @@ const slots = [
                   <input type="radio" name="payment" defaultChecked />
                   <div>
                     <strong>QR Code พร้อมเพย์</strong>
-                    <p>สแกนเพื่อชำระเงินได้ทันที.</p>
+                    <p>สแกนเพื่อชำระเงินได้ทันที</p>
                   </div>
                 </label>
 
@@ -407,3 +431,4 @@ const slots = [
       </footer>
     </div>
   );
+}
