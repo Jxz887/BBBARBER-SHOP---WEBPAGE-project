@@ -94,3 +94,82 @@ Admin / Management
 Use Case 
 - ลูกค้า: ดูบริการ, จองคิว, จ่ายเงิน  
 - ช่าง: ดูคิว
+
+2.3 ผลงานการออกแบบ
+
+1. System Architecture
+ระบบถูกออกแบบในรูปแบบ Client-Server โดยแบ่งออกเป็น 3 ส่วนหลัก:
+Frontend (UI/UX)
+Backend (API / Business Logic)
+Database (จัดเก็บข้อมูล)
+
+2. Use Case Diagram
+แสดงความสัมพันธ์ระหว่างผู้ใช้งาน (User / Admin) กับระบบ เช่น
+
+Login
+Manage Data
+View Information
+3. Activity Diagram
+แสดงขั้นตอนการทำงานของระบบ เช่น
+ผู้ใช้เข้าสู่ระบบ → ตรวจสอบข้อมูล → เข้าหน้า Dashboard
+
+4. ER Diagram
+แสดงความสัมพันธ์ของข้อมูลในระบบ เช่น
+User
+Product / Data
+Order / Record
+
+5. User Flow (ถ้ามี)
+แสดงเส้นทางการใช้งานของผู้ใช้ เช่น
+เข้าเว็บ → Login → ใช้งานฟีเจอร์ → Logout
+
+6. UX/UI
+ออกแบบให้ใช้งานง่าย มีความทันสมัย และรองรับ Responsive Design
+ใช้สีและ Layout ที่อ่านง่าย
+ปุ่มใช้งานชัดเจน
+รองรับมือถือและคอมพิวเตอร์
+
+2.4 Tech Stack ที่ใช้พัฒนา
+Frontend
+HTML, CSS, JavaScript
+React (ถ้าใช้)
+Vite
+Backend
+Node.js
+Express.js
+Database
+MySQL / MongoDB
+Tools
+GitHub (Version Control)
+Postman (API Testing)
+VS Code (Editor)
+
+2.5 Test Case และผลการทดสอบ
+Test Case ตัวอย่าง
+ลำดับ	ฟีเจอร์	สิ่งที่ทดสอบ	ผลลัพธ์
+1	Login	กรอกข้อมูลถูกต้อง	ผ่าน
+2	Login	กรอกผิด	แจ้ง error
+3	Add Data	เพิ่มข้อมูลใหม่	ผ่าน
+4	Delete	ลบข้อมูล	ผ่าน
+ผลการทดสอบ
+ระบบสามารถทำงานได้ตาม Functional Requirements
+API ทำงานถูกต้องทุก End-point
+ไม่มี Error ที่ร้ายแรง (Critical Error)
+API Testing
+ใช้ Postman ทดสอบ API
+ตรวจสอบ Response และ Status Code
+ทดสอบ CRUD ครบทุกฟังก์ชัน
+
+2.6 การ Deploy
+ระบบถูกนำไป Deploy เพื่อใช้งานจริง โดยมีรายละเอียดดังนี้
+
+Platform ที่ใช้
+Vercel 
+ขั้นตอนการ Deploy
+Push code ขึ้น GitHub
+เชื่อมต่อกับ Vercel
+ตั้งค่า Environment Variables
+Deploy และทดสอบระบบ
+ผลลัพธ์
+ระบบสามารถเข้าถึงผ่าน URL ได้
+ผู้ใช้สามารถใช้งานระบบได้จริง
