@@ -46,7 +46,7 @@ Operating Environment
 - Database: MySQL / PostgreSQL  
 
 Design and Implementation Constraints
-- ระบบต้องรองรับผู้ใช้งานพร้อมกัน 20 คน  
+- ระบบต้องรองรับผู้ใช้งานพร้อมกัน 100 คน  
 - ข้อมูลการชำระเงินต้องเข้ารหัสและปลอดภัย  
 - ใช้งานได้ทั้งมือถือและเดสก์ท็อป  
 
